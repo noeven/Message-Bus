@@ -1,7 +1,7 @@
-###Message-Bus
+# Message-Bus
 Constructing a Message Bus structure that enables the applications to work together using messages
 
-###Description:
+# Description:
 1. The simulator is to simulate a robot system with following modules: Logic module, Temperature sensor, Camera module, and Servo module.
 Logic module processes the input and commands the actuator and sensors.
 If temperature is higher than 37, the logic module will send a message to the servo module, making positive movement; if the temperature is lower than 33, the logic module will send a message to the servo module, making negative movement.
@@ -13,7 +13,7 @@ If temperature is higher than 37, the servo module needs to make a positive move
 4. Servo module changes the position by logics' command.
 If Servo module receives the message with signal:1 from the logic module, it moves positively, and vice versa.
 
-###Workflow:
+# Workflow:
 1. Logic module sends messages to the Camera module and Temperature sensor.
 2. Message bus accepts and handles the messages.
 3. Temperature sensor responds with a random double value within the range of 30 to 40, delivering a measurement message; the Camera module opens the webcam and takes a snapshot. The image will be encoded as jpg type and then transfer to base64 type. With the base64 data, the image message will be sent to the Logic module.
