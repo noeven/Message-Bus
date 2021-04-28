@@ -23,8 +23,9 @@ If Servo module receives the message with signal:1 from the logic module, it mov
 7. Message bus accepts and handles the messages.
 8. Servo module receives the command from Logic module, and it will make movement based. If it receives a measurement message with 1.0, Servo module moves positively; if it receives a measurement message with -1.0, Servo module moves negatively.
 
-%Note 1: If you are running the script on macOS, make sure you include the Info.plist as following instruction: https://stackoverflow.com/questions/55518922/missing-info-plist-file-for-c-command-line-tool-application-within-xcode
+# Note:
+Note 1: If you are running the script on macOS, make sure you include the Info.plist as following instruction: https://stackoverflow.com/questions/55518922/missing-info-plist-file-for-c-command-line-tool-application-within-xcode
 
-%Note 2: Several file address you might need to change:
+Note 2: Several file address you might need to change:
   Simulator.cpp: line 46 (address of text file) and line 50 (address of db.file).
   Node.cpp: line 128 (address of text file) and line 169 (address of image file)
